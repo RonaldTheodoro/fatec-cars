@@ -1,4 +1,4 @@
-package br.com.app.controllers;
+package br.com.app.controllers.part;
 
 import javax.enterprise.inject.Model;
 
