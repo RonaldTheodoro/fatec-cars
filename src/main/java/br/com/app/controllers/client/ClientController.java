@@ -1,4 +1,4 @@
-package br.com.app.controllers;
+package br.com.app.controllers.client;
 
 import br.com.app.daos.ClientDAO;
 import br.com.app.models.Client;
