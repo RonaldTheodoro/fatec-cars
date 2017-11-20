@@ -33,4 +33,10 @@ nb-configuration.xml
 .settings/
 .classpath
 
+# Visual studio code
+
 .vscode/*
+
+# Java Faces
+
+faces-config.NavData
