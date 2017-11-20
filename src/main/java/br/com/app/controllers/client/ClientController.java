@@ -17,7 +17,7 @@ public class ClientController {
     @Transactional
     public String save() {
         dao.save(client);
-        return "client/list_client.xhtml?face-redirect=true";
+        return "/client/list_client?face-redirect=true";
     }
     
     public Client getClient() {
