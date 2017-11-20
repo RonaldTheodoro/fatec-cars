@@ -15,7 +15,7 @@ public class PartDAO {
     }
     
     public List<Part> listAll() {
-        String jpql = "SELECT p FROM Part p";
+        String jpql = "SELECT p FROM part p";
         return manager.createQuery(jpql, Part.class).getResultList();
     }
     

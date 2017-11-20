@@ -15,7 +15,7 @@ public class VehicleDAO {
     }
     
     public List<Vehicle> listAll() {
-        String jpql = "SELECT v FROM Vehicle v";
+        String jpql = "SELECT v FROM vehicle v";
         return manager.createQuery(jpql, Vehicle.class).getResultList();
     }
     
