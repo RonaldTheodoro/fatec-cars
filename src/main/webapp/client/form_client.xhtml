@@ -23,22 +23,25 @@
         </b:navbarLinks>
     </b:navBar>
     
-    <h:form>
-        <div>
-            <h:outputLabel value="name"/>
-            <h:inputText id="name" value="#{clientController.client.name}" required="true"/>
-            <h:message for="name"/>
-        </div>
-        <div>
-            <h:outputLabel value="address"/>
-            <h:inputText id="address" value="#{clientController.client.address}" required="true"/>
-            <h:message for="address"/>
-        </div>
-        <div>
-            <h:outputLabel value="phone"/>
-            <h:inputText id="phone" value="#{clientController.client.phone}" required="true"/>
-            <h:message for="phone"/>
-        </div>
-        <h:commandButton value="Send" action="#{clientController.save()}"/>
-    </h:form>
+    <b:container>
+        <h:form>
+            <div>
+                <h:outputLabel value="name"/>
+                <h:inputText id="name" value="#{clientController.client.name}" required="true"/>
+                <h:message for="name"/>
+            </div>
+            <div>
+                <h:outputLabel value="address"/>
+                <h:inputText id="address" value="#{clientController.client.address}" required="true"/>
+                <h:message for="address"/>
+            </div>
+            <div>
+                <h:outputLabel value="phone"/>
+                <h:inputText id="phone" value="#{clientController.client.phone}" required="true"/>
+                <h:message for="phone"/>
+            </div>
+            <h:commandButton value="Send" action="#{clientController.save()}"/>
+        </h:form>
+    </b:container>
+    
 </html>

@@ -23,18 +23,20 @@
         </b:navbarLinks>
     </b:navBar>
     
-    <h:dataTable var="part" value="#{partListController.parts}">
-        <h:column>
-            <f:facet name="header">name</f:facet>
-            #{part.name}
-        </h:column>
-        <h:column>
-            <f:facet name="header">model</f:facet>
-            #{part.model}
-        </h:column>
-        <h:column>
-            <f:facet name="header">price</f:facet>
-            #{part.price}
-        </h:column>
-    </h:dataTable>
+    <b:container>
+        <h:dataTable var="part" value="#{partListController.parts}">
+            <h:column>
+                <f:facet name="header">name</f:facet>
+                #{part.name}
+            </h:column>
+            <h:column>
+                <f:facet name="header">model</f:facet>
+                #{part.model}
+            </h:column>
+            <h:column>
+                <f:facet name="header">price</f:facet>
+                #{part.price}
+            </h:column>
+        </h:dataTable>
+    </b:container>
 </html>

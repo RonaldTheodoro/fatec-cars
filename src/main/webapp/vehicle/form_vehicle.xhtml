@@ -23,38 +23,40 @@
         </b:navbarLinks>
     </b:navBar>
     
-    <h:form>
-        <div>
-            <h:outputLabel value="brand"/>
-            <h:inputText id="brand" value="#{vehicleController.vehicle.brand}" required="true"/>
-            <h:message for="brand"/>
-        </div>
-        <div>
-            <h:outputLabel value="model"/>
-            <h:inputText id="model" value="#{vehicleController.vehicle.model}" required="true"/>
-            <h:message for="model"/>
-        </div>
-        <div>
-            <h:outputLabel value="year"/>
-            <h:inputText id="year" value="#{vehicleController.vehicle.year}" required="true"/>
-            <h:message for="year"/>
-        </div>
-        <div>
-            <h:outputLabel value="category"/>
-            <h:inputText id="category" value="#{vehicleController.vehicle.category}" required="true"/>
-            <h:message for="category"/>
-        </div>
-        <div>
-            <h:outputLabel value="color"/>
-            <h:inputText id="color" value="#{vehicleController.vehicle.color}" required="true"/>
-            <h:message for="color"/>
-        </div>
-        <div>
-            <h:outputLabel value="price"/>
-            <h:inputText id="price" value="#{vehicleController.vehicle.price}" required="true"/>
-            <h:message for="price"/>
-        </div>
-        <h:commandButton value="Send" action="#{vehicleController.save()}"/>
-    </h:form>
-    
+    <b:container>
+        <h:form>
+            <div>
+                <h:outputLabel value="brand"/>
+                <h:inputText id="brand" value="#{vehicleController.vehicle.brand}" required="true"/>
+                <h:message for="brand"/>
+            </div>
+            <div>
+                <h:outputLabel value="model"/>
+                <h:inputText id="model" value="#{vehicleController.vehicle.model}" required="true"/>
+                <h:message for="model"/>
+            </div>
+            <div>
+                <h:outputLabel value="year"/>
+                <h:inputText id="year" value="#{vehicleController.vehicle.year}" required="true"/>
+                <h:message for="year"/>
+            </div>
+            <div>
+                <h:outputLabel value="category"/>
+                <h:inputText id="category" value="#{vehicleController.vehicle.category}" required="true"/>
+                <h:message for="category"/>
+            </div>
+            <div>
+                <h:outputLabel value="color"/>
+                <h:inputText id="color" value="#{vehicleController.vehicle.color}" required="true"/>
+                <h:message for="color"/>
+            </div>
+            <div>
+                <h:outputLabel value="price"/>
+                <h:inputText id="price" value="#{vehicleController.vehicle.price}" required="true"/>
+                <h:message for="price"/>
+            </div>
+            <h:commandButton value="Send" action="#{vehicleController.save()}"/>
+        </h:form>
+    </b:container>
+        
 </html>

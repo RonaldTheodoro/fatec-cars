@@ -22,32 +22,32 @@
             <b:navLink value="Vehicle List" href="../vehicle/list_vehicle.xhtml"></b:navLink>
         </b:navbarLinks>
     </b:navBar>
-    
-    <h:dataTable var="vehicle" value="#{vehicleListController.vehicles}">
-        <h:column>
-            <f:facet name="header">brand</f:facet>
-            #{vehicle.brand}
-        </h:column>
-        <h:column>
-            <f:facet name="header">model</f:facet>
-            #{vehicle.model}
-        </h:column>
-        <h:column>
-            <f:facet name="header">year</f:facet>
-            #{vehicle.year}
-        </h:column>
-        <h:column>
-            <f:facet name="header">category</f:facet>
-            #{vehicle.category}
-        </h:column>
-        <h:column>
-            <f:facet name="header">color</f:facet>
-            #{vehicle.color}
-        </h:column>
-        <h:column>
-            <f:facet name="header">price</f:facet>
-            #{vehicle.price}
-        </h:column>
-    </h:dataTable>
-
+    <b:container>
+        <h:dataTable var="vehicle" value="#{vehicleListController.vehicles}">
+            <h:column>
+                <f:facet name="header">brand</f:facet>
+                #{vehicle.brand}
+            </h:column>
+            <h:column>
+                <f:facet name="header">model</f:facet>
+                #{vehicle.model}
+            </h:column>
+            <h:column>
+                <f:facet name="header">year</f:facet>
+                #{vehicle.year}
+            </h:column>
+            <h:column>
+                <f:facet name="header">category</f:facet>
+                #{vehicle.category}
+            </h:column>
+            <h:column>
+                <f:facet name="header">color</f:facet>
+                #{vehicle.color}
+            </h:column>
+            <h:column>
+                <f:facet name="header">price</f:facet>
+                #{vehicle.price}
+            </h:column>
+        </h:dataTable>
+    </b:container>
 </html>

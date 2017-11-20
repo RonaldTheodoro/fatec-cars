@@ -23,19 +23,21 @@
         </b:navbarLinks>
     </b:navBar>
     
-    <h:dataTable var="client" value="#{clientListController.clients}">
-        <h:column>
-            <f:facet name="header">name</f:facet>
-            #{client.name}
-        </h:column>
-        <h:column>
-            <f:facet name="header">address</f:facet>
-            #{client.address}
-        </h:column>
-        <h:column>
-            <f:facet name="header">phone</f:facet>
-            #{client.phone}
-        </h:column>
-    </h:dataTable>
+    <b:container>
+        <h:dataTable var="client" value="#{clientListController.clients}">
+            <h:column>
+                <f:facet name="header">name</f:facet>
+                #{client.name}
+            </h:column>
+            <h:column>
+                <f:facet name="header">address</f:facet>
+                #{client.address}
+            </h:column>
+            <h:column>
+                <f:facet name="header">phone</f:facet>
+                #{client.phone}
+            </h:column>
+        </h:dataTable>
+    </b:container>
 
 </html>
