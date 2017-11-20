@@ -9,6 +9,23 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Fatec Carros</title>
     </h:head>
-
-
+    <h:form>
+        <div>
+            <h:outputLabel value="name"/>
+            <h:inputText id="name" value="#{partController.part.name}" required="true"/>
+            <h:message for="name"/>
+        </div>
+        <div>
+            <h:outputLabel value="model"/>
+            <h:inputText id="model" value="#{partController.part.model}" required="true"/>
+            <h:message for="model"/>
+        </div>
+        <div>
+            <h:outputLabel value="price"/>
+            <h:inputText id="price" value="#{partController.part.price}" required="true"/>
+            <h:message for="price"/>
+        </div>
+        <h:commandButton value="Send" action="#{partController.save()}"/>
+    </h:form>
+    
 </html>
