@@ -32,6 +32,7 @@ nb-configuration.xml
 .project
 .settings/
 .classpath
+jboss-web.xml
 
 # Visual studio code
 
