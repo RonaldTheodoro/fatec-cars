@@ -1,5 +1,6 @@
 package br.com.app.controllers.vehicle;
 
+import br.com.app.controllers.Controller;
 import br.com.app.daos.VehicleDAO;
 import br.com.app.models.Vehicle;
 import javax.enterprise.inject.Model;
@@ -7,7 +8,7 @@ import javax.inject.Inject;
 import javax.transaction.Transactional;
 
 @Model
-public class VehicleController {
+public class VehicleController implements Controller {
     
     private Vehicle vehicle = new Vehicle();
 
@@ -15,6 +16,7 @@ public class VehicleController {
     private VehicleDAO dao;
 
     @Transactional
+    @Override
     public String save() {
         dao.save(vehicle);
         return "/vehicle/list_vehicle?faces-redirect=true";
